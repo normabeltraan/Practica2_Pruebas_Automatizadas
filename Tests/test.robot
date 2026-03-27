@@ -39,3 +39,32 @@ TC_015_Envio_Formulario_Contacto
     Click Element                 css:.btn-primary
     Handle Alert                  ACCEPT
     [Teardown]                    Close Browser
+
+
+TC_05_Registro_De_Usuario_Exitoso
+
+    Abrir Demoblaze
+    Registrar Nuevo Usuario    ${user}    ${pass}
+    [Teardown]    Close Browser
+
+TC_06_Cerrar_Sesion_Usuario
+
+    Abrir Demoblaze
+    Login Usuario              ${user}    ${pass}
+    Cerrar Sesion
+    [Teardown]    Close Browser
+
+TC_07_Verificar_Precios_En_Home
+
+    Abrir Demoblaze
+    Validar Visualizacion De Precios
+    [Teardown]    Close Browser
+
+TC_08_Verificar_Actualizacion_Del_Carrito
+    Abrir Demoblaze
+    Añadir Producto Al Carrito    link=Samsung galaxy s6
+    Ir Al Carrito
+    Wait Until Element Is Visible    id=tbodyid    10s
+    Element Should Be Visible        xpath=//td[text()='Samsung galaxy s6']
+    Element Should Contain           xpath=(//td)[3]    360
+    [Teardown]    Close Browser

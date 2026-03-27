@@ -10,6 +10,8 @@ ${mes}              03
 ${anio}             2026
 ${email_contacto}   normadel@correo.com
 ${msj_contacto}     Mensaje de prueba
+${user}             popusa
+${pass}             adel123
 
 ${producto_phones}     Samsung galaxy s6
 ${producto_laptops}      Sony vaio i5

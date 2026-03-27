@@ -1,360 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-26T20:33:41.776216" rpa="false" schemaversion="5">
-<suite id="s1" name="Test" source="C:\Users\norma\OneDrive\Escritorio\Documentos\GitHub\Practica2_252102_252770\Tests\test.robot">
-<test id="s1-t1" name="TC_01_Agregar_Producto_Al_Carrito" line="7">
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-27T02:30:23.220208" rpa="false" schemaversion="5">
+<suite id="s1" name="Practica2 Pruebas Automatizadas" source="C:\Users\adell\OneDrive\Documentos\GitHub\Practica2_Pruebas_Automatizadas">
+<suite id="s1-s1" name="Tests" source="C:\Users\adell\OneDrive\Documentos\GitHub\Practica2_Pruebas_Automatizadas\Tests">
+<suite id="s1-s1-s1" name="Test" source="C:\Users\adell\OneDrive\Documentos\GitHub\Practica2_Pruebas_Automatizadas\Tests\test.robot">
+<test id="s1-s1-s1-t1" name="TC_08_Verificar_Actualizacion_Del_Carrito" line="63">
 <kw name="Abrir Demoblaze" owner="keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:33:42.294229" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<msg time="2026-03-27T02:30:23.439266" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-26T20:33:42.293888" elapsed="1.679572"/>
+<status status="PASS" start="2026-03-27T02:30:23.438987" elapsed="1.180608"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-03-26T20:33:43.973845" elapsed="0.401813"/>
+<status status="PASS" start="2026-03-27T02:30:24.619871" elapsed="0.022436"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>0.3s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2026-03-26T20:33:44.376511" elapsed="0.001237"/>
+<status status="PASS" start="2026-03-27T02:30:24.642676" elapsed="0.000459"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>link=Samsung galaxy s6</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-26T20:33:44.378110" elapsed="1.178615"/>
+<status status="PASS" start="2026-03-27T02:30:24.643420" elapsed="1.134558"/>
 </kw>
-<status status="PASS" start="2026-03-26T20:33:42.292498" elapsed="3.264429"/>
+<status status="PASS" start="2026-03-27T02:30:23.438224" elapsed="2.339927"/>
 </kw>
 <kw name="Añadir Producto Al Carrito" owner="keywords">
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:33:45.559573" level="INFO">Clicking link 'Samsung galaxy s6'.</msg>
+<msg time="2026-03-27T02:30:25.779260" level="INFO">Clicking link 'link=Samsung galaxy s6'.</msg>
 <arg>${producto}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:33:45.559218" elapsed="1.200050"/>
+<status status="PASS" start="2026-03-27T02:30:25.779050" elapsed="1.149049"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:33:46.760070" level="INFO">Clicking element 'class:btn-success'.</msg>
+<msg time="2026-03-27T02:30:26.928539" level="INFO">Clicking element 'class:btn-success'.</msg>
 <arg>class:btn-success</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:33:46.759705" elapsed="0.687038"/>
+<status status="PASS" start="2026-03-27T02:30:26.928320" elapsed="0.650397"/>
 </kw>
 <kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:33:47.448063" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2026-03-27T02:30:27.579237" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <arg>ACCEPT</arg>
 <doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2026-03-26T20:33:47.447512" elapsed="0.911900"/>
+<status status="PASS" start="2026-03-27T02:30:27.579020" elapsed="0.905453"/>
 </kw>
-<arg>${producto_phones}</arg>
-<status status="PASS" start="2026-03-26T20:33:45.558323" elapsed="2.801363"/>
+<arg>link=Samsung galaxy s6</arg>
+<status status="PASS" start="2026-03-27T02:30:25.778663" elapsed="2.705964"/>
 </kw>
+<kw name="Ir Al Carrito" owner="keywords">
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:33:48.360682" level="INFO">Clicking link 'id=cartur'.</msg>
+<msg time="2026-03-27T02:30:28.485526" level="INFO">Clicking link 'id=cartur'.</msg>
 <arg>id=cartur</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:33:48.360236" elapsed="1.354765"/>
+<status status="PASS" start="2026-03-27T02:30:28.485348" elapsed="1.148188"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[text()='Products']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-27T02:30:29.633756" elapsed="0.614082"/>
+</kw>
+<status status="PASS" start="2026-03-27T02:30:28.485082" elapsed="1.762901"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=tbodyid</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-27T02:30:30.248345" elapsed="0.613295"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-03-27T02:30:31.475257" level="INFO">Element 'xpath=//td[text()='Samsung galaxy s6']' is displayed.</msg>
+<arg>xpath=//td[text()='Samsung galaxy s6']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-27T02:30:30.862076" elapsed="0.613347"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:33:50.356654" level="INFO">Element 'id:tbodyid' contains text 'Samsung galaxy s6'.</msg>
-<arg>id:tbodyid</arg>
-<arg>${producto_phones}</arg>
+<msg time="2026-03-27T02:30:32.096733" level="INFO">Element 'xpath=(//td)[3]' contains text '360'.</msg>
+<arg>xpath=(//td)[3]</arg>
+<arg>360</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-03-26T20:33:49.715548" elapsed="0.641385"/>
+<status status="PASS" start="2026-03-27T02:30:31.475860" elapsed="0.621007"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-03-27T02:30:32.534238" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="carrito_actualizado.png"&gt;&lt;img src="carrito_actualizado.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>carrito_actualizado.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-03-27T02:30:32.097256" elapsed="0.437118"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-26T20:33:50.357504" elapsed="2.531491"/>
+<status status="PASS" start="2026-03-27T02:30:32.534912" elapsed="2.399420"/>
 </kw>
-<status status="PASS" start="2026-03-26T20:33:42.291362" elapsed="10.597951"/>
+<status status="PASS" start="2026-03-27T02:30:23.437481" elapsed="11.497146"/>
 </test>
-<test id="s1-t2" name="TC_02_Flujo_Compra_Completo" line="14">
-<kw name="Abrir Demoblaze" owner="keywords">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:33:52.891500" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-26T20:33:52.891181" elapsed="1.832245"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-03-26T20:33:54.723814" elapsed="0.348743"/>
-</kw>
-<kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>0.3s</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2026-03-26T20:33:55.073026" elapsed="0.000533"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>link=Samsung galaxy s6</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-26T20:33:55.073881" elapsed="0.635457"/>
-</kw>
-<status status="PASS" start="2026-03-26T20:33:52.890778" elapsed="2.818799"/>
-</kw>
-<kw name="Añadir Producto Al Carrito" owner="keywords">
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:33:55.712288" level="INFO">Clicking link 'Samsung galaxy s6'.</msg>
-<arg>${producto}</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:33:55.711811" elapsed="1.202221"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:33:56.914782" level="INFO">Clicking element 'class:btn-success'.</msg>
-<arg>class:btn-success</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:33:56.914407" elapsed="0.691636"/>
-</kw>
-<kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:33:57.606637" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<arg>ACCEPT</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2026-03-26T20:33:57.606403" elapsed="0.908894"/>
-</kw>
-<arg>${producto_phones}</arg>
-<status status="PASS" start="2026-03-26T20:33:55.710533" elapsed="2.804944"/>
-</kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:33:58.516149" level="INFO">Clicking link 'id:cartur'.</msg>
-<arg>id:cartur</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:33:58.515851" elapsed="1.193636"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:33:59.710754" level="INFO">Clicking element 'class:btn-success'.</msg>
-<arg>class:btn-success</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:33:59.710150" elapsed="0.690294"/>
-</kw>
-<kw name="Completar Formulario De Pago" owner="keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:00.402080" level="INFO">Typing text 'Norma Adel' into text field 'id:name'.</msg>
-<arg>id:name</arg>
-<arg>${nombre_usuario}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:00.401604" elapsed="1.124155"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:01.526760" level="INFO">Typing text 'Mexico' into text field 'id:country'.</msg>
-<arg>id:country</arg>
-<arg>${pais}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:01.526166" elapsed="1.012924"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:02.539707" level="INFO">Typing text 'Obregon' into text field 'id:city'.</msg>
-<arg>id:city</arg>
-<arg>${ciudad}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:02.539373" elapsed="0.999880"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:03.539867" level="INFO">Typing text '252102252770' into text field 'id:card'.</msg>
-<arg>id:card</arg>
-<arg>${tarjeta}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:03.539533" elapsed="1.022498"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:04.562984" level="INFO">Typing text '03' into text field 'id:month'.</msg>
-<arg>id:month</arg>
-<arg>${mes}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:04.562456" elapsed="0.988115"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:05.551383" level="INFO">Typing text '2026' into text field 'id:year'.</msg>
-<arg>id:year</arg>
-<arg>${anio}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:05.550905" elapsed="1.000885"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:06.552482" level="INFO">Clicking element 'css:[onclick="purchaseOrder()"]'.</msg>
-<arg>css:[onclick="purchaseOrder()"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:06.552121" elapsed="0.715133"/>
-</kw>
-<status status="PASS" start="2026-03-26T20:34:00.401093" elapsed="6.866357"/>
-</kw>
-<kw name="Confirmar Compra Exitosa" owner="keywords">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:07.903925" level="INFO">Element 'class:sweet-alert' is displayed.</msg>
-<arg>class:sweet-alert</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-26T20:34:07.268651" elapsed="0.635607"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:08.523790" level="INFO">Current page contains text 'Thank you for your purchase!'.</msg>
-<arg>Thank you for your purchase!</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-03-26T20:34:07.904729" elapsed="0.619283"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:08.524757" level="INFO">Clicking button 'class:confirm'.</msg>
-<arg>class:confirm</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:08.524333" elapsed="2.020011"/>
-</kw>
-<status status="PASS" start="2026-03-26T20:34:07.268046" elapsed="3.276472"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-26T20:34:10.545008" elapsed="2.473453"/>
-</kw>
-<status status="PASS" start="2026-03-26T20:33:52.889979" elapsed="20.128795"/>
-</test>
-<test id="s1-t3" name="TC_03_Navegacion_Categorias" line="23">
-<kw name="Abrir Demoblaze" owner="keywords">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:13.021414" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-26T20:34:13.020920" elapsed="1.843741"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-03-26T20:34:14.865104" elapsed="0.351782"/>
-</kw>
-<kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>0.3s</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2026-03-26T20:34:15.217275" elapsed="0.000430"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>link=Samsung galaxy s6</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-26T20:34:15.217949" elapsed="0.638777"/>
-</kw>
-<status status="PASS" start="2026-03-26T20:34:13.020321" elapsed="2.836613"/>
-</kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:15.857603" level="INFO">Clicking link 'Phones'.</msg>
-<arg>Phones</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:15.857301" elapsed="1.000642"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:17.479952" level="INFO">Current page contains text 'Samsung galaxy s6'.</msg>
-<arg>${producto_phones}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-03-26T20:34:16.858383" elapsed="0.621802"/>
-</kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:17.481418" level="INFO">Clicking link 'Laptops'.</msg>
-<arg>Laptops</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:17.480860" elapsed="0.978597"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:19.076245" level="INFO">Current page contains text 'Sony vaio i5'.</msg>
-<arg>${producto_laptops}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-03-26T20:34:18.460079" elapsed="0.616336"/>
-</kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:19.077280" level="INFO">Clicking link 'Monitors'.</msg>
-<arg>Monitors</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:19.076887" elapsed="0.978715"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:20.672476" level="INFO">Current page contains text 'Apple monitor 24'.</msg>
-<arg>${producto_monitors}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-03-26T20:34:20.056117" elapsed="0.616564"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-26T20:34:20.673230" elapsed="2.514653"/>
-</kw>
-<status status="PASS" start="2026-03-26T20:34:13.019502" elapsed="10.168658"/>
-</test>
-<test id="s1-t4" name="TC_015_Envio_Formulario_Contacto" line="33">
-<kw name="Abrir Demoblaze" owner="keywords">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:23.190531" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-26T20:34:23.190085" elapsed="1.440502"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-03-26T20:34:24.631079" elapsed="0.410316"/>
-</kw>
-<kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>0.3s</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2026-03-26T20:34:25.041859" elapsed="0.000648"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>link=Samsung galaxy s6</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-26T20:34:25.042898" elapsed="0.655240"/>
-</kw>
-<status status="PASS" start="2026-03-26T20:34:23.189484" elapsed="2.508924"/>
-</kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:25.699420" level="INFO">Clicking link 'Contact'.</msg>
-<arg>Contact</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:25.698952" elapsed="1.020065"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:26.720598" level="INFO">Typing text 'normadel@correo.com' into text field 'id:recipient-email'.</msg>
-<arg>id:recipient-email</arg>
-<arg>${email_contacto}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:26.719761" elapsed="1.063114"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:27.784137" level="INFO">Typing text 'Norma Adel' into text field 'id:recipient-name'.</msg>
-<arg>id:recipient-name</arg>
-<arg>${nombre_usuario}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:27.783600" elapsed="1.021937"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:28.806693" level="INFO">Typing text 'Mensaje de prueba.' into text field 'id:message-text'.</msg>
-<arg>id:message-text</arg>
-<arg>${msj_contacto}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:28.806124" elapsed="1.019170"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:29.826261" level="INFO">Clicking element 'css:.btn-primary'.</msg>
-<arg>css:.btn-primary</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T20:34:29.825794" elapsed="0.710884"/>
-</kw>
-<kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2026-03-26T20:34:30.537457" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<arg>ACCEPT</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2026-03-26T20:34:30.537159" elapsed="0.909321"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-26T20:34:31.447321" elapsed="2.485142"/>
-</kw>
-<status status="PASS" start="2026-03-26T20:34:23.188714" elapsed="10.744049"/>
-</test>
-<status status="PASS" start="2026-03-26T20:33:41.780704" elapsed="52.153036"/>
+<status status="PASS" start="2026-03-27T02:30:23.259070" elapsed="11.676571"/>
+</suite>
+<status status="PASS" start="2026-03-27T02:30:23.257759" elapsed="11.679050"/>
+</suite>
+<status status="PASS" start="2026-03-27T02:30:23.222097" elapsed="11.715504"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Test" id="s1" pass="4" fail="0" skip="0">Test</stat>
+<stat name="Practica2 Pruebas Automatizadas" id="s1" pass="1" fail="0" skip="0">Practica2 Pruebas Automatizadas</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Practica2 Pruebas Automatizadas.Tests</stat>
+<stat name="Test" id="s1-s1-s1" pass="1" fail="0" skip="0">Practica2 Pruebas Automatizadas.Tests.Test</stat>
 </suite>
 </statistics>
 <errors>
